@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>body { background-color: rgb(173, 193, 230);
+    color: white;
+    font: normal 20pt arial;
+    
+    text-align: center;
+
+     }h1 { color: rgb(255, 187, 0); }</style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> 
+    <p>Já me livrei da maldição</p> 
+    <script>
+var n1 = window.prompt('Digite um número:') //Janela com campo de texto para digitar número
+var n2 = window.prompt('Digite outro número:') //Janela com campo de texto para digitar outro número
+var s = n1 + n2 //Concatenação de strings, não soma os números
+window.alert('A concatenação dos números  é: ' + s) //Não exibe a soma, na verdade exibe concatenação dos números
+// + serve para adição e para concatenação
+// number + number para adição
+// string + string para concatenação
+// Para somar números, é necessário converter as strings para números
+n1 = Number(n1) //Converte n1 para número podemos usar Number() ou parseInt() para número inteiro ou parseFloat() para número real
+n2 = Number(n2) //Converte n2 para número
+s = n1 + n2 //Soma os números
+window.alert('A soma dos números é: ' + s) //Exibe a soma dos números
+// de número para string usamos String() ou toString()
+// template strings são strings que podem conter expressões dentro delas, usando ${expressão}
+    </script>
+</body> 
+
+</html>
